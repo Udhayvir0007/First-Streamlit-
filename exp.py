@@ -23,7 +23,8 @@ def load_data(filepath):
     return df
 
 # Construct path
-file_path = os.path.expanduser("~/Documents/LABS/DVPD_LAb/exp10/ss.csv")
+# Use relative path so Streamlit Cloud can find it in the repo root
+file_path = "ss.csv"
 df = load_data(file_path)
 
 # 3. Sidebar Interactive Filters
